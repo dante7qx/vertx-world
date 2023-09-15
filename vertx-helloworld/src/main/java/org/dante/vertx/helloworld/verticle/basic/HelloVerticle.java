@@ -1,5 +1,6 @@
 package org.dante.vertx.helloworld.verticle.basic;
 
+import cn.hutool.core.lang.Console;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Context;
 import io.vertx.core.Promise;
@@ -14,8 +15,10 @@ public class HelloVerticle extends AbstractVerticle {
 
 	@Override
 	public void start(Promise<Void> startFuture) throws Exception {
+		Console.log("================================= HTTP 服务端 ====================================");
+
 		Context context = parseContext();
-		System.out.println(Thread.currentThread().getName() +
+		Console.log(Thread.currentThread().getName() +
                 ": Start : " +
                 Thread.currentThread().getId()
                 + ", DeployId: " + this.deploymentID());
@@ -23,12 +26,12 @@ public class HelloVerticle extends AbstractVerticle {
 		vertx.createHttpServer().requestHandler(req -> {
 			req.response()
 				.putHeader("content-type", "text/plain; charset=utf-8")
-				.end("来自 Vert.x 的问候!");
+				.end("来自 Vert.x 4 的问候!");
 		}).listen(8888, http -> {
 			if (http.succeeded()) {
-				System.out.println(context.get("data").toString());
+				Console.log(context.get("data").toString());
 				startFuture.complete();
-				System.out.println("HTTP server started on port 8888");
+				Console.log("HTTP server started on port 8888");
 			} else {
 				startFuture.fail(http.cause());
 			}
@@ -57,9 +60,7 @@ public class HelloVerticle extends AbstractVerticle {
 		if (context.isEventLoopContext()) {
 		    System.out.println("Context attached to Event Loop");
 		} else if (context.isWorkerContext()) {
-		    System.out.println("Context attached to Worker Thread");
-		} else if (context.isMultiThreadedWorkerContext()) {
-		    System.out.println("Context attached to Worker Thread - multi threaded worker");
+			System.out.println("Context attached to Worker Thread");
 		} else if (! Context.isOnVertxThread()) {
 		    System.out.println("Context not attached to a thread managed by vert.x");
 		}

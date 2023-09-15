@@ -20,6 +20,7 @@
 		<vertx.version>4.4.5</vertx.version>
 		<junit-jupiter.version>5.9.1</junit-jupiter.version>
 		<awaitility.version>4.2.0</awaitility.version>
+		<hutool.version>5.8.21</hutool.version>
 	</properties>
 
 	<modules>
@@ -55,7 +56,10 @@
 			<artifactId>vertx-junit5</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-resolver-dns-native-macos</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
@@ -68,7 +72,13 @@
 			<version>${junit-jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+
+		<!-- 工具类 -->
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>${hutool.version}</version>
+		</dependency>
 	</dependencies>
 
 </project>
