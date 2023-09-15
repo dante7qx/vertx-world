@@ -1,4 +1,4 @@
-package org.dante.vertx.helloworld.verticle.net.echo;
+package org.dante.vertx.redis.verticle.net.echo;
 
 import cn.hutool.core.lang.Console;
 import io.vertx.core.AbstractVerticle;

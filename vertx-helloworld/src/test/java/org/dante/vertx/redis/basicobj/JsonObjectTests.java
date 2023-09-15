@@ -1,4 +1,4 @@
-package org.dante.vertx.helloworld.basicobj;
+package org.dante.vertx.redis.basicobj;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;

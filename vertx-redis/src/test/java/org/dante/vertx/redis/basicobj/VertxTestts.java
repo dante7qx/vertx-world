@@ -1,7 +1,8 @@
-package org.dante.vertx.helloworld.basicobj;
+package org.dante.vertx.redis.basicobj;
 
-import io.vertx.core.Vertx;
 import org.junit.jupiter.api.Test;
+
+import io.vertx.rxjava.core.Vertx;
 
 public class VertxTestts {
 	

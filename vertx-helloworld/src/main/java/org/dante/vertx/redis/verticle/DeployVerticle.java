@@ -1,4 +1,4 @@
-package org.dante.vertx.helloworld.verticle;
+package org.dante.vertx.redis.verticle;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;

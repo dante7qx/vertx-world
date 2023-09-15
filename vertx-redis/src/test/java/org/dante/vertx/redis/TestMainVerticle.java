@@ -1,4 +1,4 @@
-package org.dante.vertx.helloworld;
+package org.dante.vertx.redis;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

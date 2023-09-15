@@ -1,6 +1,6 @@
-package org.dante.vertx.helloworld;
+package org.dante.vertx.redis;
 
-import org.dante.vertx.helloworld.verticle.basic.HelloVerticle;
+import org.dante.vertx.redis.verticle.basic.HelloVerticle;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

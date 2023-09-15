@@ -13,13 +13,17 @@
 	<artifactId>vertx-redis</artifactId>
 
 	<properties>
-		<main.verticle>org.dante.vertx.helloworld.MainVerticle</main.verticle>
+		<main.verticle>org.dante.vertx.redis.MainVerticle</main.verticle>
 	</properties>
 	
 	<dependencies>
 		<dependency>
 		    <groupId>org.awaitility</groupId>
 		    <artifactId>awaitility</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-redis-client</artifactId>
 		</dependency>
 	</dependencies>
 

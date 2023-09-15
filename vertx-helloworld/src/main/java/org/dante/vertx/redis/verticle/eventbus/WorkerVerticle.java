@@ -1,4 +1,4 @@
-package org.dante.vertx.helloworld.verticle.eventbus;
+package org.dante.vertx.redis.verticle.eventbus;
 
 import cn.hutool.core.lang.Console;
 import io.vertx.core.AbstractVerticle;

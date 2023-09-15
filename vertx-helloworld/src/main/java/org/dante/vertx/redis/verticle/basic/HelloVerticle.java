@@ -1,4 +1,4 @@
-package org.dante.vertx.helloworld.verticle.basic;
+package org.dante.vertx.redis.verticle.basic;
 
 import cn.hutool.core.lang.Console;
 import io.vertx.core.AbstractVerticle;
